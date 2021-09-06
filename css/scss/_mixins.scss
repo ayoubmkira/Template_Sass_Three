@@ -1,0 +1,45 @@
+
+/*
+** Mixin Transition:
+*/
+@mixin transition($args...) {
+    transition: $args;
+}
+
+/*
+** Mixin Transition:
+*/
+@mixin background-img($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+** Mixin Medium Screen:
+*/
+@mixin medium-screen {
+    @media screen and (min-width: $min-md-screen){
+        @content;
+    }
+}
+
+/*
+** Mixin Large Screen:
+*/
+@mixin large-screen {
+    @media screen and (min-width: $min-lg-screen){
+        @content;
+    }
+}
+
+/*
+** Mixin Extra-Large Screen:
+*/
+@mixin extra-large-screen {
+    @media screen and (min-width: $min-xl-screen){
+        @content;
+    }    
+}
